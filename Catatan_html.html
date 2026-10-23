@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Catatan html</title>
+    <link href="Logo Apsi.png" rel="icon">
+    <link rel="stylesheet" href="catatan.css">
+</head>
+<body>
+
+<!-- Navbar kiri -->
+<div class="navbar">
+    <img class="logo" src="Logo Apsi.png" alt="Logo APSI">
+    <a href="#day1">Struktur utama HTML</a>
+    <a class="sub" href="#d1-html">Membuat file HTML</a>
+    <a href="#day2">Komponen dasar HTML</a>
+    <a class="sub" href="#d2-tulisan">Membuat tulisan</a>
+    <a class="sub" href="#d2-enter">Enter dan garis</a>
+    <a class="sub" href="#d2-format">Bold, miring, sub, sup</a>
+    <a class="sub" href="#d2-list">List</a>
+    <a class="sub" href="#d2-tabel">Tabel</a>
+    <a class="sub" href="#d2-gambar">Menambahkan gambar</a>
+    <a class="sub" href="#d2-map">Menambahkan map</a>
+    <a class="sub" href="#d2-link">Link dan link map</a>
+</div>
+
+<div class="isi">
+
+    <h1>Materi coding html</h1>
+
+    <!-- ================= Struktur ================= -->
+    <h2 id="day1">Struktur utama html</h2>
+
+    <h3 id="d1-html">1. Membuat file HTML</h3>
+    <p>Buat file baru lalu simpan dengan ekstensi .html. Setelah itu buka file-nya di browser.</p>
+
+    <p>Kodenya:</p>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Latihan HTML RevoU 2&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hallo World test 11&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <h1 style="text-align:left; color:black">Hallo World test 11</h1>
+    </div>
+
+    <!-- ================= komponen ================= -->
+    <h2 id="day2">Komponen dasar dari file html</h2>
+
+    <h3 id="d2-tulisan">1. Membuat tulisan di HTML</h3>
+    <p>Pakai &lt;h1&gt;&lt;/h1&gt; untuk heading 1, &lt;h2&gt;&lt;/h2&gt; untuk heading 2, dan seterusnya sampai heading 6. Untuk tulisan biasa pakai &lt;p&gt;&lt;/p&gt;.</p>
+
+<pre>&lt;h1&gt;Ini Heading 1&lt;/h1&gt;
+&lt;h2&gt;Ini Heading 2&lt;/h2&gt;
+&lt;h3&gt;Ini Heading 3&lt;/h3&gt;
+&lt;h4&gt;Ini Heading 4&lt;/h4&gt;
+&lt;h5&gt;Ini Heading 5&lt;/h5&gt;
+&lt;h6&gt;Ini Heading 6&lt;/h6&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <h1 style="text-align:left; color:black">Ini Heading 1</h1>
+        <h2 style="border:none; margin-top:10px; color:black">Ini Heading 2</h2>
+        <h3 style="margin-top:10px">Ini Heading 3</h3>
+        <h4>Ini Heading 4</h4>
+        <h5>Ini Heading 5</h5>
+        <h6>Ini Heading 6</h6>
+    </div>
+
+    <h3 id="d2-enter">2. Enter dan garis pemisah</h3>
+    <p>&lt;br&gt; dipakai untuk enter (pindah baris). &lt;hr&gt; dipakai untuk membuat garis.</p>
+
+<pre>&lt;p&gt;Untuk menggunakan fungsi br, tulis seperti ini&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Nah, seperti ini&lt;/p&gt;
+
+&lt;p&gt;Untuk menggunakan fungsi hr, tulis seperti ini&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Nah, seperti ini&lt;/p&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <p>Untuk menggunakan fungsi br, tulis seperti ini</p>
+        <br>
+        <p>Nah, seperti ini</p>
+        <p>Untuk menggunakan fungsi hr, tulis seperti ini</p>
+        <hr>
+        <p>Nah, seperti ini</p>
+    </div>
+
+    <p class="catatan">Catatan: di catatan sebelumnya saya menulis &lt;tr&gt; untuk garis. Itu salah, yang benar &lt;hr&gt;. Tag &lt;tr&gt; dipakai untuk baris tabel.</p>
+
+    <h3 id="d2-format">3. Tulisan tebal, miring, sub, dan sup</h3>
+    <p>&lt;b&gt;&lt;/b&gt; untuk tebal (bold), &lt;i&gt;&lt;/i&gt; untuk miring (italic), &lt;sub&gt;&lt;/sub&gt; untuk tulisan kecil di bawah, &lt;sup&gt;&lt;/sup&gt; untuk tulisan kecil di atas.</p>
+
+<pre>&lt;p&gt;&lt;b&gt;Nama saya Surya&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nama saya Surya&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Hallo &lt;sub&gt;saya Surya&lt;/sub&gt; dan ini adik saya &lt;sup&gt;Keenan&lt;/sup&gt;&lt;/p&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <p><b>Nama saya Surya</b></p>
+        <p><i>Nama saya Surya</i></p>
+        <p>Hallo <sub>saya Surya</sub> dan ini adik saya <sup>Keenan</sup></p>
+    </div>
+
+    <h3 id="d2-list">4. List</h3>
+
+    <p><b>a. List biasa (ul)</b></p>
+    <p>Pakai &lt;ul&gt;&lt;/ul&gt;, isinya pakai &lt;li&gt;&lt;/li&gt; untuk setiap item. Bentuk titiknya diatur dengan type: disc, circle, square, atau none.</p>
+
+<pre>&lt;ul type="circle"&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;li&gt;C++&lt;/li&gt;
+    &lt;li&gt;Python&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <p>Macam-macam bahasa pemrograman</p>
+        <ul type="circle">
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Python</li>
+        </ul>
+    </div>
+
+    <p><b>b. List angka (ol type="1")</b></p>
+
+<pre>&lt;ol type="1"&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;li&gt;C++&lt;/li&gt;
+    &lt;li&gt;Python&lt;/li&gt;
+&lt;/ol&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <ol type="1">
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Python</li>
+        </ol>
+    </div>
+
+    <p><b>c. List huruf (ol type="a")</b></p>
+
+<pre>&lt;ol type="a"&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;li&gt;C++&lt;/li&gt;
+    &lt;li&gt;Python&lt;/li&gt;
+&lt;/ol&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <ol type="a">
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Python</li>
+        </ol>
+    </div>
+
+    <h3 id="d2-tabel">5. Tabel</h3>
+    <p>Tabel dibuat dengan &lt;table&gt;&lt;/table&gt;. Di dalamnya ada:</p>
+    <ol>
+        <li>&lt;tr&gt;&lt;/tr&gt; = table row (baris)</li>
+        <li>&lt;th&gt;&lt;/th&gt; = table head (judul kolom)</li>
+        <li>&lt;td&gt;&lt;/td&gt; = table data (isi tabel)</li>
+    </ol>
+
+    <p>Supaya ada garisnya, tambahkan CSS ini setelah head:</p>
+<pre>&lt;style&gt;
+    table, th, td {
+        border: 1px solid blue;
+    }
+&lt;/style&gt;</pre>
+
+    <p><b>a. Tabel biasa</b></p>
+<pre>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;NIM&lt;/th&gt;
+        &lt;th&gt;Kelas&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Pratama Surya Dinata&lt;/td&gt;
+        &lt;td&gt;122230048&lt;/td&gt;
+        &lt;td&gt;TI-B&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Keenan Nur Rafii&lt;/td&gt;
+        &lt;td&gt;122230049&lt;/td&gt;
+        &lt;td&gt;TI-B&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Kelas</th>
+            </tr>
+            <tr>
+                <td>Pratama Surya Dinata</td>
+                <td>122230048</td>
+                <td>TI-B</td>
+            </tr>
+            <tr>
+                <td>Keenan Nur Rafii</td>
+                <td>122230049</td>
+                <td>TI-B</td>
+            </tr>
+        </table>
+    </div>
+
+    <p><b>b. Gabung kolom (colspan)</b></p>
+    <p>Pakai colspan="2" atau lebih untuk menggabungkan beberapa kolom jadi satu.</p>
+
+<pre>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;NIM&lt;/th&gt;
+        &lt;th&gt;Kelas&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan="3"&gt;&lt;center&gt;&lt;b&gt;DATA&lt;/b&gt;&lt;/center&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Pratama Surya Dinata&lt;/td&gt;
+        &lt;td&gt;122230048&lt;/td&gt;
+        &lt;td&gt;TI-B&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Keenan Nur Rafii&lt;/td&gt;
+        &lt;td&gt;122230049&lt;/td&gt;
+        &lt;td&gt;TI-B&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Kelas</th>
+            </tr>
+            <tr>
+                <td colspan="3"><center><b>DATA</b></center></td>
+            </tr>
+            <tr>
+                <td>Pratama Surya Dinata</td>
+                <td>122230048</td>
+                <td>TI-B</td>
+            </tr>
+            <tr>
+                <td>Keenan Nur Rafii</td>
+                <td>122230049</td>
+                <td>TI-B</td>
+            </tr>
+        </table>
+    </div>
+
+    <p><b>c. Gabung baris (rowspan)</b></p>
+    <p>Pakai rowspan="2" atau lebih untuk menggabungkan beberapa baris jadi satu. Tabel di bawah hanya 2 baris, jadi saya pakai rowspan="2".</p>
+
+<pre>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th rowspan="2"&gt;Kota&lt;/th&gt;
+        &lt;td&gt;Jakarta&lt;/td&gt;
+        &lt;td&gt;Bandung&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Bogor&lt;/td&gt;
+        &lt;td&gt;Bekasi&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <table>
+            <tr>
+                <th rowspan="2">Kota</th>
+                <td>Jakarta</td>
+                <td>Bandung</td>
+            </tr>
+            <tr>
+                <td>Bogor</td>
+                <td>Bekasi</td>
+            </tr>
+        </table>
+    </div>
+
+ <h3 id="d2-gambar">6. Menambahkan gambar</h3>
+    <p>Gambar dimasukkan dengan tag &lt;img&gt;. Tag ini tidak perlu ditutup. Simpan file gambarnya di folder yang sama dengan file HTML, lalu tulis nama file-nya di src.</p>
+
+    <ul>
+        <li>src = nama file gambar (atau lokasi file-nya)</li>
+        <li>alt = tulisan pengganti kalau gambar tidak muncul</li>
+        <li>width = lebar gambar</li>
+        <li>height = tinggi gambar</li>
+    </ul>
+
+<pre>&lt;img src="Logo Apsi.png" alt="Logo APSI" width="300"&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <img src="Logo Apsi.png" alt="Logo APSI" width="300">
+    </div>
+
+    <p>Kalau gambarnya ada di folder lain, tulis folder-nya di depan nama file.</p>
+<pre>&lt;img src="gambar/foto.jpg" alt="Foto saya" width="200"&gt;</pre>
+
+    <p class="catatan">Catatan: kalau gambar tidak muncul, cek nama file-nya (huruf besar dan kecil berpengaruh) dan cek apakah file gambar satu folder dengan file HTML.</p>
+
+    <h3 id="d2-map">7. Menambahkan map</h3>
+    <p>Map dari Google Maps dimasukkan dengan tag &lt;iframe&gt;. Caranya: buka Google Maps, cari lokasinya, klik Bagikan, pilih Sematkan peta, lalu salin kode HTML-nya dan tempel di file.</p>
+
+    <p>Kodenya (link panjang di src saya singkat jadi ...):</p>
+<pre>&lt;iframe src="https://www.google.com/maps/embed?pb=..."
+    width="600" height="450" style="border:0;"
+    allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;</pre>
+
+    <ul>
+        <li>src = link embed dari Google Maps</li>
+        <li>width = lebar peta</li>
+        <li>height = tinggi peta</li>
+        <li>style="border:0;" = menghilangkan garis di pinggir peta</li>
+    </ul>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.257104281802!2d110.40742327505191!3d-7.762535292256627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599a7306f089%3A0xedea1a3863540e53!2sUPN%20Veteran%20Yogyakarta%2C%20Jl.%20Ring%20Road%20Utara%2C%20Ngropoh%2C%20Condongcatur%2C%20Kec.%20Depok%2C%20Kabupaten%20Sleman%2C%20Daerah%20Istimewa%20Yogyakarta%2055281!5e0!3m2!1sid!2sid!4v1792736877111!5m2!1sid!2sid" width="600" height="450" style="border:0; max-width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+    <h3 id="d2-link">8. Menambahkan link dan link map</h3>
+
+    <p><b>a. Link biasa</b></p>
+    <p>Link dibuat dengan tag &lt;a&gt;&lt;/a&gt;. Alamat tujuan ditulis di href. Kalau ditambah target="_blank", link akan terbuka di tab baru.</p>
+
+<pre>&lt;a href="https://www.upnyk.ac.id/" target="_blank"&gt;Buka website RevoU&lt;/a&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <a href="https://www.upnyk.ac.id/" target="_blank">Buka website</a>
+    </div>
+
+    <p><b>b. Link ke map (Google Maps)</b></p>
+    <p>Caranya: buka Google Maps, cari lokasinya, klik Bagikan, lalu salin link-nya dan tempel di href.</p>
+
+<pre>&lt;a href="https://maps.app.goo.gl/yBkakUMZJNn6vBmS7" target="_blank"&gt;Lihat lokasi di Google Maps&lt;/a&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <a href="https://maps.app.goo.gl/yBkakUMZJNn6vBmS7" target="_blank">Lihat lokasi di Google Maps</a>
+    </div>
+
+    <p><b>c. Gambar yang bisa diklik</b></p>
+    <p>Tag &lt;img&gt; bisa dimasukkan ke dalam &lt;a&gt;, jadi gambarnya berfungsi sebagai link.</p>
+
+<pre>&lt;a href="https://www.upnyk.ac.id/" target="_blank"&gt;
+    &lt;img src="Logo upn.png" alt="Klik untuk buka map" width="200"&gt;
+&lt;/a&gt;</pre>
+
+    <p>Hasilnya:</p>
+    <div class="hasil">
+        <a href="https://www.upnyk.ac.id/" target="_blank">
+            <img src="Logo upn.png" alt="Klik untuk buka map" width="200">
+        </a>
+    </div>
+
+</div>
+</body>
+</html

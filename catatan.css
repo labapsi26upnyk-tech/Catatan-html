@@ -1,0 +1,110 @@
+
+        .navbar .logo {
+        display: block;
+        width: 90px;
+        margin: 0 auto 15px auto;
+        background-color: white;
+        border-radius: 50%;
+        padding: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 210px;
+            height: 100%;
+            background-color: #1a4f9c;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+
+        .navbar h3 {
+            color: white;
+            text-align: center;
+            margin: 0 0 15px 0;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+
+        .navbar a:hover {
+            background-color: #0f3366;
+        }
+
+        .navbar .sub {
+            padding-left: 35px;
+            font-size: 13px;
+        }
+
+        .isi {
+            width: 800px;
+            max-width: 100%;
+            margin-left: 230px;
+            background-color: white;
+            padding: 20px 30px;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a4f9c;
+        }
+
+        h2 {
+            color: #1a4f9c;
+            border-bottom: 2px solid #1a4f9c;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 30px;
+        }
+
+        pre {
+            background-color: #eeeeee;
+            border-left: 4px solid #1a4f9c;
+            padding: 10px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+
+        .hasil {
+            border: 1px solid #1a4f9c;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .catatan {
+            background-color: #fff3cd;
+            border: 1px solid #e0c36a;
+            padding: 8px 12px;
+        }
+
+        table, th, td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 6px 12px;
+        }
+
+        th {
+            background-color: #dbe8fb;
+        }
